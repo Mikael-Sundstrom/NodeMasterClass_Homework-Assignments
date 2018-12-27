@@ -60,7 +60,7 @@ const unifiedServer = (req, res) => {
 
 	// Get the payload if there is any
 	const decoder = new StringDecoder('utf-8')
-	var buffer = ''
+	let buffer = ''
 	req.on('data', (data) => {
 		buffer += decoder.write(data)
 	})
@@ -69,10 +69,10 @@ const unifiedServer = (req, res) => {
 		buffer += decoder.end()
 
 		// Define the handler the request should go to
-		var chosenHandler = typeof router[trimmedPath] !== 'undefined' ? router[trimmedPath] : router['error404']
+		const chosenHandler = typeof router[trimmedPath] !== 'undefined' ? router[trimmedPath] : router['error404']
 
 		// Construct the data object to send to the router handler
-		var data = {
+		const data = {
 			'trimmedPath': trimmedPath,
 			'queryStringObject': queryStringObject,
 			'method': method,
@@ -89,7 +89,7 @@ const unifiedServer = (req, res) => {
 			payload = typeof (payload) == 'object' ? payload : {}
 
 			// Convert the payload to a string
-			var payloadString = JSON.stringify(payload)
+			const payloadString = JSON.stringify(payload)
 
 			// Return the response and give the header the status code
 			res.setHeader('Content-Type', 'application/json')
