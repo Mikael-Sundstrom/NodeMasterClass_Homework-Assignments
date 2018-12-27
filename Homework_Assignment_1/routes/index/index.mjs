@@ -1,6 +1,6 @@
 const index = {
-	"name": "Index / Start",
-	"description": "About this api.",
+	"name": "Index",
+	"description": "Index of this api.",
 	"status": 200
 }
 

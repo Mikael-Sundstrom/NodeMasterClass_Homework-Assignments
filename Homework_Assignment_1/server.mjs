@@ -37,9 +37,7 @@ httpsServer.listen(config.httpsPort, () => {
     \x1b[1mNodeJS API Server 2\x1b[0m
     Port: \x1b[33m${config.httpsPort}\x1b[0m
     Environment: \x1b[32m${config.envName}\x1b[0m
-    SSL Encrypted: \x1b[35mTrue\x1b[0m
-
-	`)
+    SSL Encrypted: \x1b[35mTrue\x1b[0m\n\n`)
 })
 
 // All the server logic for the http and https server
@@ -70,7 +68,7 @@ const unifiedServer = (req, res) => {
 	req.on('end', () => {
 		buffer += decoder.end()
 
-		// Chose the handler the request should go to
+		// Define the handler the request should go to
 		var chosenHandler = typeof router[trimmedPath] !== 'undefined' ? router[trimmedPath] : router['error404']
 
 		// Construct the data object to send to the router handler
@@ -93,32 +91,13 @@ const unifiedServer = (req, res) => {
 			// Convert the payload to a string
 			var payloadString = JSON.stringify(payload)
 
-			// Return the response
+			// Return the response and give the header the status code
 			res.setHeader('Content-Type', 'application/json')
 			res.writeHead(statusCode)
 			res.end(payloadString)
 
-			// Log the path
+			// Log the staus code and the json payload string
 			console.log(statusCode, payloadString)
 		})
 	})
 }
-
-
-// Define handlers
-/* var handlers = {}
-handlers.sample = (data, callback) => {
-	callback(406, { 'name': 'sample handler' })
-}
-handlers.ping = (data, callback) => {
-	callback(200)
-}
-handlers.error404 = (data, callback) => {
-	callback(404, { 'name': 'error404 handler' })
-} */
-
-// Define router request
-/* var router = {
-	'sample': handlers.sample,
-	'ping': handlers.ping
-} */

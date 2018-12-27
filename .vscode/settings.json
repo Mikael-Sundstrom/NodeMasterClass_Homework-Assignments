@@ -17,7 +17,7 @@
 	"files.exclude": {
 		"**/package.json": false,
 		"**/README.md": false,
-		"**/.vscode": false,
+		"**/.vscode": true,
 		"**/.gitignore": true
 	},
 	"terminal.integrated.fontSize": 13

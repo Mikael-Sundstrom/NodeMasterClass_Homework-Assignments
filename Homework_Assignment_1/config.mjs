@@ -1,5 +1,5 @@
 /**
- * Crete and export configuration variables
+ * Crete and export configuration
  */
 
 // Container for all the environments

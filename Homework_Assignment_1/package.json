@@ -1,7 +1,7 @@
 {
-	"name": "api-mikaelsundstrom",
+	"name": "nodejs_homework_assignments",
 	"version": "1.0.0",
-	"description": "This is a server that I created to serve my own personal blog. I have built it from scratch without third party vendors to gain full control over the application and APIs that I can use.",
+	"description": "This is a repo where I show my homework assignments from pirple.",
 	"main": "server.mjs",
 	"scripts": {
 		"start": "SET NODE_ENV=production&& node --experimental-modules server.mjs",
@@ -10,15 +10,16 @@
 	},
 	"keywords": [
 		"node",
+		"nodejs",
 		"server",
 		"api",
 		"json",
-		"rest",
+		"restful",
 		"personal",
-		"blog"
+		"homework"
 	],
 	"author": "Mikael Sundström",
-	"license": "Apache-2.0",
+	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {}
 }
