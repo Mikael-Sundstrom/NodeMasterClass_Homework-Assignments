@@ -9,7 +9,7 @@ Please create a simple "Hello World" API. Meaning:
 
 ### How To Use And What I Have Done.
 
-`npm start` will start the production environment and the `npm run dev` will start the development enironment. The command is based on windows 10 commands, and not iOS. The run commands has a flag named --experimental-modules which is allows me to use newer syntax with `.mjs`-extension.
+`npm start` will start the production environment and the `npm run dev` will start the development enironment. The command is based on windows 10 commands, and not iOS. The run commands has a flag named --experimental-modules which allows me to use newer syntax with the `.mjs`-extension.
 
 In the server.mjs file is a line: `import string_decoder from 'string_decoder'; const { StringDecoder } = string_decoder`. This is a work around for a earlier version in node 10, because it wasn't possible to: `import { StringDecoder } from 'string_decoder'`. 
 
