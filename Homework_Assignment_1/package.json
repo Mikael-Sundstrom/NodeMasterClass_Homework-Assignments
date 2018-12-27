@@ -1,0 +1,24 @@
+{
+	"name": "api-mikaelsundstrom",
+	"version": "1.0.0",
+	"description": "This is a server that I created to serve my own personal blog. I have built it from scratch without third party vendors to gain full control over the application and APIs that I can use.",
+	"main": "server.mjs",
+	"scripts": {
+		"start": "SET NODE_ENV=production&& node --experimental-modules server.mjs",
+		"dev": "SET NODE_ENV=staging&& node --experimental-modules server.mjs",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"node",
+		"server",
+		"api",
+		"json",
+		"rest",
+		"personal",
+		"blog"
+	],
+	"author": "Mikael Sundström",
+	"license": "Apache-2.0",
+	"dependencies": {},
+	"devDependencies": {}
+}

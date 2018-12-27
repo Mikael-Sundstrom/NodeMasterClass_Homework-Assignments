@@ -1,0 +1,24 @@
+{
+	"css.lint.duplicateProperties": "warning",
+	"css.lint.boxModel": "warning",
+	"css.lint.float": "error",
+	"workbench.sideBar.location": "right",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
+	"editor.fontSize": 16,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.folding": false,
+	"explorer.autoReveal": false,
+	"explorer.openEditors.visible": 0,
+	"explorer.confirmDelete": false,
+	"files.exclude": {
+		"**/package.json": false,
+		"**/README.md": false,
+		"**/.vscode": false,
+		"**/.gitignore": true
+	},
+	"terminal.integrated.fontSize": 13
+}
