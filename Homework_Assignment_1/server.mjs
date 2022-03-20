@@ -1,7 +1,7 @@
 import http from 'http'
 import https from 'https'
 import url from 'url'
-import string_decoder from 'string_decoder'; const { StringDecoder } = string_decoder
+import { StringDecoder } from 'string_decoder'
 import fs from 'fs'
 import config from './config.mjs'
 import router from './router.mjs'
