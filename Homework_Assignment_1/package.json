@@ -4,8 +4,8 @@
 	"description": "This is a repo where I show my homework assignments from pirple.",
 	"main": "server.mjs",
 	"scripts": {
-		"start": "SET NODE_ENV=production&& node --experimental-modules server.mjs",
-		"dev": "SET NODE_ENV=staging&& node --experimental-modules server.mjs",
+		"start": "SET NODE_ENV=production&& node server.mjs",
+		"dev": "SET NODE_ENV=staging&& node server.mjs",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
